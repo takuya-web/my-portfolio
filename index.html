@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="scss/style.css">
 </head>
 
 <body class="l-body">
@@ -25,8 +27,12 @@
         <li><a href="">Blog</a></li>
         <li><a href="">Contact</a></li>
       </ul>
-      <button class="p-header__menu-button"></button>
     </nav>
+      <button class="p-header__menu-button" id="btn01">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
   </header>
 
   <main class="l-main">
@@ -36,12 +42,12 @@
       <p>Web Production O-bisu</p>
     </article>
 
-    <article class="p-main-visual__catchcopy">
+    <article class="p-main-visual__catchcopy l-body__content-area">
       <p>キャッチコピーが入ります。</p>
       <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
     </article>
 
-    <article class="p-service">
+    <article class="p-service l-body__content-area">
       <h2>Service</h2>
       <ul class="p-service__item-wrapper">
         <li>
@@ -62,7 +68,7 @@
       </ul>
     </article>
 
-    <article class="p-works">
+    <article class="p-works l-body__content-area">
       <h2>Works</h2>
       <ul class="p-works__grid">
         <li><img src="/images/sample.png"></li>
@@ -85,7 +91,7 @@
       </dl>
     </article>
 
-    <article class="p-contact">
+    <article class="p-contact l-body__content-area">
       <button class="c-contact__button">
         <a href="">制作のご依頼やご相談パートナー契約などはこちらまで。</a>
       </button>
@@ -97,5 +103,7 @@
     <p>© 2021 O-bisu</p>
   </footer>
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

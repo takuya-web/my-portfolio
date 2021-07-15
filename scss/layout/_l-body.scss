@@ -1,0 +1,14 @@
+@import "../foundation/mixin";
+
+.l-body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+  color: $gray;
+
+  &__content-area {
+    padding: 0 12.612%;
+    @include smart-phone {
+      padding: 0 5.365%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.p-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+  height: 100px;
+
+  &__logo img {
+    width: 164px;
+  }
+
+  &__nav {
+    @include smart-phone {
+      display: none;
+    }
+  }
+}
+
+//ハンバーガーボタン
+@include tablet {
+  @include hamberger-menu;
+}
