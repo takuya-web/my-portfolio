@@ -1,17 +1,50 @@
 .p-header {
   display: flex;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   justify-content: space-between;
-  padding: 20px 20px 0 20px;
-  height: 100px;
+  align-items: center;
+  background-color: $white;
+  padding: 10px 20px 0 20px;
+  height: 80px;
+  width: 100%;
 
   &__logo > img {
-    width: 164px;
+    width: 120px;
   }
+}
 
-  &__nav {
-    @include tablet {
-      display: none;
+//スライドメニュー
+@include tablet {
+  .p-header__nav {
+    display: none;
+    & > ul {
+      list-style: none;
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      text-align: center;
+    }
+    & li > a {
+      display: block;
+      background-color: $white;
+      width: 100%;
+      font-size: 1.5rem;
+      color: $gray;
+      text-decoration: none;
+      padding: 19px 0;
+      margin: 0 auto;
+    }
+    & li:nth-of-type(1) > a {
+      padding: 49px 0 19px 0;
+      margin: 0 auto;
+    }
+    & li > a:hover {
+      background-color: $yellow;
+      transition: all .5s;
     }
   }
 }
