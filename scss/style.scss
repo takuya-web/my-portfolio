@@ -6,6 +6,8 @@ foundation
 @import "../scss/foundation/ress";
 @import "../scss/foundation/mixin";
 @import "../scss/foundation/base";
+@import "../scss/foundation/slick";
+@import "../scss/foundation/slick-theme";
 
 /* --------------------------------------------------------
 layout
@@ -18,6 +20,8 @@ project
 @import "../scss/object/project/p-header";
 @import "../scss/object/project/p-main-visual";
 @import "../scss/object/project/p-service";
+@import "../scss/object/project/p-works";
+@import "../scss/object/project/p-news";
 
 /* --------------------------------------------------------
 component

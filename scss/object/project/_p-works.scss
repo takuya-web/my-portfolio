@@ -1,0 +1,10 @@
+.p-works__grid {
+  display: flex;
+  margin-bottom: 100px;
+  & img {
+    @include smart-phone {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
