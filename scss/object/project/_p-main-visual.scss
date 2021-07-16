@@ -1,0 +1,38 @@
+.p-main-visual {
+  position: relative;
+  & > img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    @include smart-phone {
+     height: 185px;
+    }
+  }
+  & > p {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  //余白
+  &::after {
+    display: block;
+    content: "";
+    height: 185px;
+    width: 100%;
+    background-color: #fff;
+  }
+}
+
+.p-main-visual__catchcopy {
+  text-align: center;
+  & > p:nth-child(1) {
+    padding: 15.018% 0 0 0;
+    font-size: 1.25rem;
+  }
+  & > p:nth-child(2) {
+    padding: 9.01% 0 15.018% 0;
+  }
+}
