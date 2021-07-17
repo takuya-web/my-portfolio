@@ -1,10 +1,9 @@
 .p-works__grid {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
-  padding: 0 13.663%;
+  margin: 0 13.663% 100px 13.663%;
   @include tablet {
-    padding: 0;
+    margin: 0 0 100px 0;
   }
   & img {
     object-fit: cover;
@@ -16,4 +15,17 @@
       height: auto;
     }
   }
+}
+
+//スリック矢印
+.slick-prev:before, .slick-next:before {
+  color: $dark-blue;
+  font-size: 40px;
+}
+.slick-prev {
+  left: -50px;
+  z-index: 100;
+}
+.slick-next {
+  right: -30px;
 }

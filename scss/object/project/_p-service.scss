@@ -1,5 +1,5 @@
 .p-service {
-  padding: 100px 240px 100px 240px;
+  padding: 5.2553% 12.6124% 5.2553% 12.6124%;
   margin-bottom: 100px;
   text-align: center;
   background-color: $yellow;
@@ -11,7 +11,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 164px;
+    width: 100%;
+    max-width: 60%;
   }
   &__item-wrapper {
     display: flex;
@@ -53,8 +54,9 @@
   }
   &__spacer {
     position: relative;
-    width: 300px;
     height: 300px;
+    width: 100%;
+    max-width: 300px;
     margin: 0 auto;
     border: 1px solid $gray;
     border-radius: 50%;

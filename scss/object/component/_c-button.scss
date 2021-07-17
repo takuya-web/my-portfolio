@@ -1,19 +1,25 @@
 //トップページ　コンタクトボタン
 .c-button__contact {
   display: block;
-  padding: 5.23788%;
-  width: 100%;
-
+  padding: 2.4833% 8.0702%;
+  width: 60%;
   margin: 0 auto;
   background-color: $green;
   border-radius: 10px;
+  @include tablet {
+    width: 100%;
+    padding: 5.23788%;
+  }
   @include smart-phone {
     padding: 9.6142%;
   }
   & > a {
     color: $white;
-    font-size: 0.75rem;
+    font-size: 1.125rem;
     font-weight: bold;
     text-decoration: none;
+    @include tablet {
+      font-size: 0.75rem;
+    }
   }
 }

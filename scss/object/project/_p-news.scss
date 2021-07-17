@@ -1,5 +1,10 @@
 .p-news {
-  padding: 0 21.545%;
+  padding: 0 12.612%;
+  margin-top: 200px;
+  @include tablet {
+    padding: 0;
+    margin-top: 0;
+  }
   & > ul {
     margin-bottom: 100px;
     @include tablet {
@@ -9,21 +14,22 @@
   }
   & li {
     display: flex;
+    height: 5.78125vw;
+    align-items: center;
     @include tablet {
       display: block;
+      height: 100%;
     }
   }
   & li:nth-of-type(odd) {
     background-color: $yellow;
   }
   & li p {
-    height: 5.78125vw;
     @include tablet {
       height: 6.65552vw;
     }
     @include smart-phone {
       height: 14.230769vw;
-      overflow: hidden;
     }
   }
   & li p:nth-of-type(1) {
@@ -41,7 +47,8 @@
   }
   & li p:nth-of-type(2) {
     padding: 0 0 0 4.6176%;
-    font-size: 1.125rem;
+    font-size: 0.937988vw;
+    overflow: hidden;
     @include tablet {
       padding: 0 20px 0 20px;
       font-size: 2.15827vw;

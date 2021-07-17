@@ -723,7 +723,7 @@ project
 .p-header__nav li > a {
   display: inline;
   padding: 0;
-  margin: 0 50px 0 0;
+  margin: 0 2.604165vw 0 0;
   height: 100%;
   width: 100%;
   color: #4A4A4A;
@@ -892,7 +892,7 @@ project
 }
 
 .p-service {
-  padding: 100px 240px 100px 240px;
+  padding: 5.2553% 12.6124% 5.2553% 12.6124%;
   margin-bottom: 100px;
   text-align: center;
   background-color: #F7F8DA;
@@ -910,7 +910,8 @@ project
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 164px;
+  width: 100%;
+  max-width: 60%;
 }
 
 .p-service__item-wrapper {
@@ -972,8 +973,9 @@ project
 
 .p-service__item-block__spacer {
   position: relative;
-  width: 300px;
   height: 300px;
+  width: 100%;
+  max-width: 300px;
   margin: 0 auto;
   border: 1px solid #4A4A4A;
   border-radius: 50%;
@@ -986,13 +988,12 @@ project
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 100px;
-  padding: 0 13.663%;
+  margin: 0 13.663% 100px 13.663%;
 }
 
 @media screen and (max-width: 834px) {
   .p-works__grid {
-    padding: 0;
+    margin: 0 0 100px 0;
   }
 }
 
@@ -1011,8 +1012,30 @@ project
   }
 }
 
+.slick-prev:before, .slick-next:before {
+  color: #333B3A;
+  font-size: 40px;
+}
+
+.slick-prev {
+  left: -50px;
+  z-index: 100;
+}
+
+.slick-next {
+  right: -30px;
+}
+
 .p-news {
-  padding: 0 21.545%;
+  padding: 0 12.612%;
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 834px) {
+  .p-news {
+    padding: 0;
+    margin-top: 0;
+  }
 }
 
 .p-news > ul {
@@ -1035,20 +1058,21 @@ project
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 5.78125vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 834px) {
   .p-news li {
     display: block;
+    height: 100%;
   }
 }
 
 .p-news li:nth-of-type(odd) {
   background-color: #F7F8DA;
-}
-
-.p-news li p {
-  height: 5.78125vw;
 }
 
 @media screen and (max-width: 834px) {
@@ -1060,7 +1084,6 @@ project
 @media screen and (max-width: 390px) {
   .p-news li p {
     height: 14.230769vw;
-    overflow: hidden;
   }
 }
 
@@ -1086,7 +1109,8 @@ project
 
 .p-news li p:nth-of-type(2) {
   padding: 0 0 0 4.6176%;
-  font-size: 1.125rem;
+  font-size: 0.937988vw;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 834px) {
@@ -1128,11 +1152,18 @@ component
 -------------------------------------------------------- */
 .c-button__contact {
   display: block;
-  padding: 5.23788%;
-  width: 100%;
+  padding: 2.4833% 8.0702%;
+  width: 60%;
   margin: 0 auto;
   background-color: #38572B;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 834px) {
+  .c-button__contact {
+    width: 100%;
+    padding: 5.23788%;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -1143,8 +1174,14 @@ component
 
 .c-button__contact > a {
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 1.125rem;
   font-weight: bold;
   text-decoration: none;
+}
+
+@media screen and (max-width: 834px) {
+  .c-button__contact > a {
+    font-size: 0.75rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
