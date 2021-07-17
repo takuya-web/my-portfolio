@@ -1,8 +1,11 @@
 .p-service {
-  padding: 30px 0 50px 0;
+  padding: 100px 240px 100px 240px;
   margin-bottom: 100px;
   text-align: center;
   background-color: $yellow;
+  @include tablet {
+    padding: 30px 0 50px 0;
+  }
   &__logo {
     position: absolute;
     top: 50%;
@@ -11,18 +14,42 @@
     height: 164px;
   }
   &__item-wrapper {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
+    padding: 0 7.6763%;
+    @include tablet {
+      display: block;
+      padding: 0;
+    }
   }
 }
 
 .p-service__item-block {
   & > p:nth-of-type(1) {
-    padding: 9.01% 0 0 0;
+    max-width: 300px;
+    padding: 6.282% 0 0 0;
+    margin: 0 auto;
     font-size: 1.25rem;
+    @include tablet {
+      padding: 9.01% 18.23845%  0 18.23845%;
+      max-width: 100%;
+    }
+    @include smart-phone {
+      padding: 9.01% 20px 0 20px;
+    }
   }
   & > p:nth-of-type(2) {
-    padding: 4.507% 0 15.018% 0;
+    max-width: 300px;
     font-size: 1rem;
+    padding: 3.1413% 0 0 0;
+    @include tablet {
+      max-width: 100%;
+      padding: 4.507% 18.23845% 0 18.23845%;
+    }
+    @include smart-phone {
+      padding: 4.507% 20px 15.018% 20px;
+    }
   }
   &__spacer {
     position: relative;

@@ -12,14 +12,14 @@ jQuery(function() {
   jQuery('.p-works__slick').slick( {
     autoplay: true,
     arrows: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     inifinite: true,
   
     responsive: [{
-      breakpoint: 390,
+      breakpoint: 835,
         settings: {
           slidesToShow: 1,
-          arrow: false,
+          arrows: false,
         }
       }]
     });

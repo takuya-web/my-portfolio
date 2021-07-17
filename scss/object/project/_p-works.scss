@@ -1,10 +1,19 @@
 .p-works__grid {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 100px;
+  padding: 0 13.663%;
+  @include tablet {
+    padding: 0;
+  }
   & img {
-    @include smart-phone {
-      object-fit: cover;
-      width: 100%;
+    object-fit: cover;
+    padding: 2.162%;
+    height: 250px;
+    width: 100%;
+    @include tablet {
+      padding: 0;
+      height: auto;
     }
   }
 }

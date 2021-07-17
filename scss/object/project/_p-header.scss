@@ -3,23 +3,40 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  justify-content: space-between;
   align-items: center;
   background-color: $white;
-  padding: 10px 20px 0 20px;
-  height: 80px;
+  padding: 10px 12.5459% 0;
+  height: 150px;
   width: 100%;
+  @include tablet {
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+    height: 80px;
+  }
 
   &__logo > img {
-    width: 120px;
+    width: 225px;
+    @include tablet {
+      width: 120px;
+    }
   }
 }
 
-//スライドメニュー
-@include tablet {
-  .p-header__nav {
+
+.p-header__nav {
+  margin-left: auto;
+  @include tablet {
     display: none;
-    & > ul {
+    margin-left: 0;
+  }
+  & > ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    height: 140px;
+    @include tablet {
+      display: block;
       list-style: none;
       position: absolute;
       top: 80px;
@@ -28,21 +45,31 @@
       width: 100%;
       text-align: center;
     }
-    & li > a {
+  }
+  & li > a {
+    display: inline;
+    padding: 0;
+    margin: 0 50px 0 0;
+    height: 100%;
+    width: 100%;
+    color: $gray;
+    text-decoration: none;
+    font-size: 1.5rem;
+    @include tablet {
       display: block;
       background-color: $white;
-      width: 100%;
-      font-size: 1.5rem;
-      color: $gray;
-      text-decoration: none;
       padding: 19px 0;
       margin: 0 auto;
     }
-    & li:nth-of-type(1) > a {
+  }
+  & li:nth-of-type(1) > a {
+      @include tablet {
       padding: 49px 0 19px 0;
       margin: 0 auto;
     }
-    & li > a:hover {
+  }
+  & li > a:hover {
+    @include tablet {
       background-color: $yellow;
       transition: all .5s;
     }
