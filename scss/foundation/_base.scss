@@ -11,3 +11,26 @@ h2 {
    margin-bottom: 30px;
   }
 }
+
+h3 {
+  position: relative;
+  display: block;
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+  &::before {
+    display: block;
+    content: "";
+    position: relative;
+    top: 42px;
+    width: 22.969%;
+    border-bottom: 4px solid $green;
+  }
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 22.969%;
+    width: 77.031%;
+    border-bottom: 4px solid $dark-yellow;
+  }
+}

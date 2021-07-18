@@ -1,0 +1,23 @@
+.p-profile {
+  margin: 200px 5.2549% 0 5.2549%;
+  @include tablet {
+    margin-top: 80px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  & img {
+    height: 100%;
+    width: 100%;
+    max-height: 500px;
+    max-width: 500px;
+    border-radius: 50%;
+  }
+  &__content-block {
+    width: 44.7917vw;
+  }
+  & p {
+    font-size: 1.125rem;
+  }
+}

@@ -17,12 +17,15 @@ layout
 /* --------------------------------------------------------
 project
 -------------------------------------------------------- */
+/*トップページ*/
 @import "../scss/object/project/p-header";
 @import "../scss/object/project/p-main-visual";
 @import "../scss/object/project/p-service";
 @import "../scss/object/project/p-works";
 @import "../scss/object/project/p-news";
 @import "../scss/object/project/p-footer";
+/*author*/
+@import "../scss/object/project/p-profile";
 
 /* --------------------------------------------------------
 component

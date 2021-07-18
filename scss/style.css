@@ -342,6 +342,31 @@ h2 {
   }
 }
 
+h3 {
+  position: relative;
+  display: block;
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+}
+
+h3::before {
+  display: block;
+  content: "";
+  position: relative;
+  top: 42px;
+  width: 22.969%;
+  border-bottom: 4px solid #38572B;
+}
+
+h3::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 22.969%;
+  width: 77.031%;
+  border-bottom: 4px solid #D5DABC;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -645,6 +670,7 @@ layout
 /* --------------------------------------------------------
 project
 -------------------------------------------------------- */
+/*トップページ*/
 .p-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1145,6 +1171,41 @@ project
 .p-footer > p {
   font-size: 1rem;
   color: #fff;
+}
+
+/*author*/
+.p-profile {
+  margin: 200px 5.2549% 0 5.2549%;
+}
+
+@media screen and (max-width: 834px) {
+  .p-profile {
+    margin-top: 80px;
+  }
+}
+
+.p-profile__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.p-profile img {
+  height: 100%;
+  width: 100%;
+  max-height: 500px;
+  max-width: 500px;
+  border-radius: 50%;
+}
+
+.p-profile__content-block {
+  width: 44.7917vw;
+}
+
+.p-profile p {
+  font-size: 1.125rem;
 }
 
 /* --------------------------------------------------------
