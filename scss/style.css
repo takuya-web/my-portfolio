@@ -961,7 +961,7 @@ project
 @media screen and (max-width: 834px) {
   .p-service__item-block > p:nth-of-type(2) {
     max-width: 100%;
-    padding: 4.507% 18.23845% 0 18.23845%;
+    padding: 4.507% 18.23845% 6.1208% 18.23845%;
   }
 }
 
@@ -1008,7 +1008,7 @@ project
 @media screen and (max-width: 834px) {
   .p-works__grid img {
     padding: 0;
-    height: auto;
+    height: 100%;
   }
 }
 
