@@ -1,5 +1,5 @@
 .p-service {
-  padding: 5.2553% 12.6124% 5.2553% 12.6124%;
+  padding: 5.20834vw 12.5vw;
   margin-bottom: 100px;
   text-align: center;
   background-color: $yellow;
@@ -16,7 +16,7 @@
   }
   &__item-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     padding: 0 7.6763%;
     @include tablet {
@@ -54,11 +54,18 @@
   }
   &__spacer {
     position: relative;
-    height: 300px;
-    width: 100%;
-    max-width: 300px;
+    height: 15.625vw;
+    width: 15.625vw;
     margin: 0 auto;
     border: 1px solid $gray;
     border-radius: 50%;
+    @include tablet {
+      height: 35.9728vw;
+      width: 35.9728vw;
+    }
+    @include smart-phone {
+      height: 77.121vw;
+      width: 77.121vw;
+    }
   }
 }

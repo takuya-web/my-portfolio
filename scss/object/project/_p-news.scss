@@ -1,5 +1,5 @@
 .p-news {
-  padding: 0 12.612%;
+  padding: 0 12.5vw;
   margin-top: 200px;
   @include tablet {
     padding: 0;
@@ -33,29 +33,29 @@
     }
   }
   & li p:nth-of-type(1) {
-    padding: 0 0 0 4.6176%;
-    font-size: 1.125rem;
+    padding: 0 0 0 2.65625vw;
+    font-size: 0.9375vw;
     font-weight: bold;
     @include tablet {
-      padding: 3.06073% 20px 0 20px;
+      padding: 2.9976vw 5.1282vw 0 5.1282vw;
       font-size: 2.15827vw;
     }
     @include smart-phone {
-      padding: 5% 20px 0 20px;
+      padding: 6.410256vw 5.1282vw;
       font-size: 4.61538vw;
     }
   }
   & li p:nth-of-type(2) {
-    padding: 0 0 0 4.6176%;
-    font-size: 0.937988vw;
-    overflow: hidden;
+    padding: 0 2.604166vw;
+    font-size: 0.833333vw;
+    overflow: auto;
     @include tablet {
-      padding: 0 20px 0 20px;
-      font-size: 2.15827vw;
+      padding: 0 5.1282vw 0 5.1282vw;
+      font-size: 1.918465vw;
     }
     @include smart-phone {
-      padding: 0 20px 0 20px;
-      font-size: 4.10256vw;
+      padding: 0 5.1282vw;
+      font-size: 3.589743vw;
     }
   }
 }
