@@ -1406,6 +1406,53 @@ project
   }
 }
 
+/*archive*/
+.p-archive {
+  margin: 200px 8.270833vw 0 8.270833vw;
+}
+
+@media screen and (max-width: 834px) {
+  .p-archive {
+    margin: 120px 1vw 0 1vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .p-archive {
+    margin: 120px 2.564102vw 0 2.564102vw;
+  }
+}
+
+.p-archive__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.p-archive__grid li {
+  list-style: none;
+  padding: 1.302083vw;
+  width: calc(100% / 3);
+}
+
+@media screen and (max-width: 834px) {
+  .p-archive__grid li {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .p-archive__grid li {
+    width: 100%;
+  }
+}
+
+.p-archive__grid li img {
+  width: 100%;
+}
+
 /* --------------------------------------------------------
 component
 -------------------------------------------------------- */
