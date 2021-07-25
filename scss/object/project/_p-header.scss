@@ -1,3 +1,14 @@
+//アドミンバー余白対策
+.admin-bar .p-header {
+  margin-top: 32px !important;
+}
+@media screen and ( max-width: 834px ) {
+	.admin-bar .p-header {
+    margin-top: 46px !important;
+  }
+}
+//end_アドミンバー余白対策
+
 .p-header {
   display: flex;
   position: fixed;
@@ -14,7 +25,7 @@
     height: 80px;
   }
 
-  &__logo > img {
+  &__logo img {
     width: 225px;
     @include tablet {
       width: 120px;

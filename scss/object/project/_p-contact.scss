@@ -1,0 +1,66 @@
+//フロントページ
+.p-contact__button {
+  margin: 200px 5.20834vw 0 5.20834vw;
+  min-height: 540px;
+  @include tablet {
+    margin-top: 120px;
+  }
+}
+
+//コンタクトページ
+.p-contact__area {
+  margin: 200px 5.20834vw 0 5.20834vw;
+  min-height: 540px;
+  font-size: 1.25rem;
+  text-align: center;
+  @include tablet {
+    margin-top: 120px;
+  }
+}
+
+//Contact Form 7用
+.p-contact__cf7 {
+  &-wrapper {
+    width: 50vw;
+    margin: 0 auto;
+    text-align: left;
+    & dd {
+      border: 1px solid $gray;
+      & input, textarea {
+        width: 100%;
+      }
+    }
+    & dt {
+      margin-top: 1vw;
+    }
+  }
+}
+
+.p-contact__cf7-submit > input {
+  display: block;
+  padding: 1.822915vw 5.989583vw;
+  width: 50vw;
+  margin: 30px auto 0 auto;
+  background-color: $green;
+  border-radius: 10px;
+  color: $white;
+  @include tablet {
+    width: 100%;
+    padding: 3.59712vw;
+  }
+  @include smart-phone {
+    padding: 8.20512vw;
+  }
+  & > a {
+    color: $white;
+    font-size: 0.9375vw;
+    font-weight: bold;
+    text-decoration: none;
+    @include tablet {
+      font-size: 1.8vw;
+    }
+    @include smart-phone {
+      font-size: 3.07692vw;
+    }
+  }
+}

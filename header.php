@@ -11,16 +11,13 @@
 <body <?php body_class('l-body'); ?>>
 
   <header class="p-header">
-    <h1 class="p-header__logo"><img src="<?php echo get_template_directory_uri(); ?>/images/index_header-logo.svg"></h1>
-    <nav class="p-header__nav">
-      <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Service</a></li>
-        <li><a href="">Works</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
+    <h1 class="p-header__logo">
+      <a href="<?php echo esc_url( '/' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/index_header-logo.svg"></a></h1>
+        <?php wp_nav_menu(array(
+          'menu' => 'ヘッダーメニュー',
+          'container' => 'nav',
+          'container_class' => 'p-header__nav',
+        )); ?>
       <button class="p-header__menu-button" id="btn01">
         <span></span>
         <span></span>

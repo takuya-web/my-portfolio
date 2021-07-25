@@ -684,6 +684,16 @@ layout
 project
 -------------------------------------------------------- */
 /*トップページ*/
+.admin-bar .p-header {
+  margin-top: 32px !important;
+}
+
+@media screen and (max-width: 834px) {
+  .admin-bar .p-header {
+    margin-top: 46px !important;
+  }
+}
+
 .p-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -710,12 +720,12 @@ project
   }
 }
 
-.p-header__logo > img {
+.p-header__logo img {
   width: 225px;
 }
 
 @media screen and (max-width: 834px) {
-  .p-header__logo > img {
+  .p-header__logo img {
     width: 120px;
   }
 }
@@ -1113,6 +1123,11 @@ project
   }
 }
 
+.p-news a {
+  color: #4A4A4A;
+  text-decoration: none;
+}
+
 .p-news > ul {
   margin-bottom: 100px;
 }
@@ -1451,6 +1466,91 @@ project
 
 .p-archive__grid li img {
   width: 100%;
+}
+
+/*contact*/
+.p-contact__button {
+  margin: 200px 5.20834vw 0 5.20834vw;
+  min-height: 540px;
+}
+
+@media screen and (max-width: 834px) {
+  .p-contact__button {
+    margin-top: 120px;
+  }
+}
+
+.p-contact__area {
+  margin: 200px 5.20834vw 0 5.20834vw;
+  min-height: 540px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 834px) {
+  .p-contact__area {
+    margin-top: 120px;
+  }
+}
+
+.p-contact__cf7-wrapper {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.p-contact__cf7-wrapper dd {
+  border: 1px solid #4A4A4A;
+}
+
+.p-contact__cf7-wrapper dd input, .p-contact__cf7-wrapper dd textarea {
+  width: 100%;
+}
+
+.p-contact__cf7-wrapper dt {
+  margin-top: 1vw;
+}
+
+.p-contact__cf7-submit > input {
+  display: block;
+  padding: 1.822915vw 5.989583vw;
+  width: 50vw;
+  margin: 30px auto 0 auto;
+  background-color: #38572B;
+  border-radius: 10px;
+  color: #fff;
+}
+
+@media screen and (max-width: 834px) {
+  .p-contact__cf7-submit > input {
+    width: 100%;
+    padding: 3.59712vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .p-contact__cf7-submit > input {
+    padding: 8.20512vw;
+  }
+}
+
+.p-contact__cf7-submit > input > a {
+  color: #fff;
+  font-size: 0.9375vw;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 834px) {
+  .p-contact__cf7-submit > input > a {
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .p-contact__cf7-submit > input > a {
+    font-size: 3.07692vw;
+  }
 }
 
 /* --------------------------------------------------------

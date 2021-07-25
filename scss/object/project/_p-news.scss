@@ -5,6 +5,10 @@
     padding: 0;
     margin-top: 0;
   }
+  & a {
+    color: $gray;
+    text-decoration: none;
+  }
   & > ul {
     margin-bottom: 100px;
     @include tablet {

@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="o-bisu.com">
-  <meta name="keywords" content="">
-  <title>o-bisu.com</title>
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="scss/style.css">
-</head>
-
-<body class="l-body">
-
-  <header class="p-header">
-    <h1 class="p-header__logo"><img src="/images/index_header-logo.svg"></h1>
-    <nav class="p-header__nav">
-      <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Service</a></li>
-        <li><a href="">Works</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
-      <button class="p-header__menu-button" id="btn01">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-  </header>
-
+<?php get_header(); ?>
   <main class="l-main">
     
     <article class="p-single">
-      <h2>Works</h2>
+      <h2>News</h2>
       <div class="p-single__wrapper">
         <img src="/images/sample.png">
         <div class="p-single__content-block">
@@ -50,14 +14,4 @@
     <!-- fade-layer -->
     <div class="l-body__fade-layer"></div>
   </main>
-
-  <footer class="p-footer">
-    <p>© 2021 O-bisu</p>
-  </footer>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/slick.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>
