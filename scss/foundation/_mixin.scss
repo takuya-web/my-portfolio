@@ -2,12 +2,19 @@
 //  レスポンシブ対応(ブレイクポイント設定)
 //*****************************************************************
 $sm : 390px; //smart-phone
+$ad : 782px; //アドミンバーの高さ切り替わりポイント
 $md : 834px; //tablet
 //$lg
 //$xl
 
 @mixin smart-phone {
   @media screen and (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin admin-bar-point {
+  @media screen and (max-width: $ad) {
     @content;
   }
 }

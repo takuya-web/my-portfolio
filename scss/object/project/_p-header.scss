@@ -2,25 +2,20 @@
 //余白
 .admin-bar .p-header {
   margin-top: 32px;
-  @include tablet {
+  @include admin-bar-point {
     margin-top: 46px;
-  }
-  @media screen and (max-width: 600px) {
-    .admin-bar .p-header {
-      margin-top: 46px;
-    }
   }
   @include smart-phone {
     margin-top: 0;
   }
 }
-//600pxズレる問題
+//600pxズレ解消
 @media screen and (max-width: 600px) {
   #wpadminbar {
     display: none;
   }
   .admin-bar .p-header {
-    margin-top: 0;
+    margin-top: 46px;
   }
 }
 //end_アドミンバー対策

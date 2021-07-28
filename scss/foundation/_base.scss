@@ -41,3 +41,15 @@ h3 {
     border-bottom: 4px solid $dark-yellow;
   }
 }
+
+
+//fadeUpTrigger
+.fade {
+  transition: all 1000ms;
+  opacity: 0;
+  transform:  translate(0px, 50px);
+}
+.fadein {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}

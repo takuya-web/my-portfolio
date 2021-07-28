@@ -8,7 +8,7 @@ jQuery(function(){
 });
 
 //ハンバーガーメニュー動作不具合対策
-const mediaQuery = window.matchMedia('(min-width: 834px)');
+const mediaQuery = window.matchMedia('(min-width: 835px)');
 mediaQuery.addListener(handle); //width監視、発火
 function handle(mm) {
   if (mm.matches) {
@@ -30,10 +30,24 @@ jQuery(function() {
   
     responsive: [{
       breakpoint: 835,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
-      }]
-    });
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      }
+    }]
   });
+
+  //fedeUpTrigger
+	jQuery(window).on('scroll', function (){
+		jQuery('.fade').each(function(){
+			let elemPos = jQuery(this).offset().top;
+			let scroll = jQuery(window).scrollTop();
+			let windowHeight = jQuery(window).height();
+			if (scroll > elemPos - windowHeight + 200){
+				jQuery(this).addClass('fadein');
+			} else {
+        jQuery(this).removeClass('fadein');
+      }
+		});
+	});
+});
