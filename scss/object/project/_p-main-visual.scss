@@ -1,7 +1,7 @@
 .p-main-visual {
   position: relative;
   margin-top: 150px; //ヘッダー分 余白
-  @include smart-phone {
+  @include tablet {
     margin-top: 80px; //ヘッダー分 余白
   }
   & > img {

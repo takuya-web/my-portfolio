@@ -7,6 +7,19 @@ jQuery(function(){
   });
 });
 
+//ハンバーガーメニュー動作不具合対策
+const mediaQuery = window.matchMedia('(min-width: 834px)');
+mediaQuery.addListener(handle); //width監視、発火
+function handle(mm) {
+  if (mm.matches) {
+    //幅834px以上の時
+    document.querySelector('.p-header__nav').style.display = 'block' //css書き換え
+  } else {
+    //それ以外の時
+    document.querySelector('.p-header__nav').style.display = 'none' //css書き換え
+  }
+}
+
 //Worksスリック
 jQuery(function() {
   jQuery('.p-works__slick').slick( {

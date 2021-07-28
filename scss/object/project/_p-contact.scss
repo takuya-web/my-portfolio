@@ -24,6 +24,9 @@
     width: 50vw;
     margin: 0 auto;
     text-align: left;
+    @include tablet {
+      width: 100%;
+    }
     & dd {
       border: 1px solid $gray;
       & input, textarea {
@@ -47,14 +50,16 @@
   @include tablet {
     width: 100%;
     padding: 3.59712vw;
+    font-size: 1.8vw;
   }
   @include smart-phone {
     padding: 8.20512vw;
   }
+  &:hover {
+    opacity: 0.7;
+    transition: all 0.5s;
+  }
   & > a {
-    color: $white;
-    font-size: 0.9375vw;
-    font-weight: bold;
     text-decoration: none;
     @include tablet {
       font-size: 1.8vw;

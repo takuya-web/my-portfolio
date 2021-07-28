@@ -73,7 +73,7 @@
     <article class="p-contact__button l-body__content-area">
       <h2>Contact</h2>
       <button class="c-button__contact">
-        <a href="">制作のご依頼やパートナー契約などはこちらより</a>
+        <a href="<?php echo site_url( '/contact' ); ?>">制作のご依頼やパートナー契約などはこちらより</a>
       </button>
     </article>
     <!-- fade-layer -->

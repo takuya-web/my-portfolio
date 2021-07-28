@@ -685,12 +685,33 @@ project
 -------------------------------------------------------- */
 /*トップページ*/
 .admin-bar .p-header {
-  margin-top: 32px !important;
+  margin-top: 32px;
 }
 
 @media screen and (max-width: 834px) {
   .admin-bar .p-header {
-    margin-top: 46px !important;
+    margin-top: 46px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .admin-bar .p-header .admin-bar .p-header {
+    margin-top: 46px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .admin-bar .p-header {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    display: none;
+  }
+  .admin-bar .p-header {
+    margin-top: 0;
   }
 }
 
@@ -799,8 +820,8 @@ project
 @media screen and (max-width: 834px) {
   .p-header__nav li > a:hover {
     background-color: #F7F8DA;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all .7s;
+    transition: all .7s;
   }
 }
 
@@ -858,7 +879,7 @@ project
   margin-top: 150px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 834px) {
   .p-main-visual {
     margin-top: 80px;
   }
@@ -1466,6 +1487,9 @@ project
 
 .p-archive__grid li img {
   width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*contact*/
@@ -1499,6 +1523,12 @@ project
   text-align: left;
 }
 
+@media screen and (max-width: 834px) {
+  .p-contact__cf7-wrapper {
+    width: 100%;
+  }
+}
+
 .p-contact__cf7-wrapper dd {
   border: 1px solid #4A4A4A;
 }
@@ -1525,6 +1555,7 @@ project
   .p-contact__cf7-submit > input {
     width: 100%;
     padding: 3.59712vw;
+    font-size: 1.8vw;
   }
 }
 
@@ -1534,10 +1565,13 @@ project
   }
 }
 
+.p-contact__cf7-submit > input:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .p-contact__cf7-submit > input > a {
-  color: #fff;
-  font-size: 0.9375vw;
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -1558,7 +1592,6 @@ component
 -------------------------------------------------------- */
 .c-button__contact {
   display: block;
-  padding: 1.822915vw 5.989583vw;
   width: 50vw;
   margin: 0 auto;
   background-color: #38572B;
@@ -1579,6 +1612,8 @@ component
 }
 
 .c-button__contact > a {
+  display: block;
+  padding: 1.822915vw 5.989583vw;
   color: #fff;
   font-size: 0.9375vw;
   font-weight: bold;
@@ -1595,5 +1630,11 @@ component
   .c-button__contact > a {
     font-size: 3.07692vw;
   }
+}
+
+.c-button__contact:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

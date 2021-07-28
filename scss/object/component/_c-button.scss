@@ -1,7 +1,6 @@
 //トップページ　コンタクトボタン
 .c-button__contact {
   display: block;
-  padding: 1.822915vw 5.989583vw;
   width: 50vw;
   margin: 0 auto;
   background-color: $green;
@@ -14,6 +13,8 @@
     padding: 8.20512vw;
   }
   & > a {
+    display: block;
+    padding: 1.822915vw 5.989583vw;
     color: $white;
     font-size: 0.9375vw;
     font-weight: bold;
@@ -24,5 +25,9 @@
     @include smart-phone {
       font-size: 3.07692vw;
     }
+  }
+  &:hover {
+    opacity: 0.7;
+    transition: all 0.5s;
   }
 }

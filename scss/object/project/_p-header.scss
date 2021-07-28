@@ -1,13 +1,29 @@
-//アドミンバー余白対策
+//アドミンバー対策
+//余白
 .admin-bar .p-header {
-  margin-top: 32px !important;
-}
-@media screen and ( max-width: 834px ) {
-	.admin-bar .p-header {
-    margin-top: 46px !important;
+  margin-top: 32px;
+  @include tablet {
+    margin-top: 46px;
+  }
+  @media screen and (max-width: 600px) {
+    .admin-bar .p-header {
+      margin-top: 46px;
+    }
+  }
+  @include smart-phone {
+    margin-top: 0;
   }
 }
-//end_アドミンバー余白対策
+//600pxズレる問題
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    display: none;
+  }
+  .admin-bar .p-header {
+    margin-top: 0;
+  }
+}
+//end_アドミンバー対策
 
 .p-header {
   display: flex;
@@ -82,7 +98,7 @@
   & li > a:hover {
     @include tablet {
       background-color: $yellow;
-      transition: all .5s;
+      transition: all .7s;
     }
   }
 }
