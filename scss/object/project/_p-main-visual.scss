@@ -55,6 +55,7 @@
   & > p:nth-child(1) {
     padding: 5.20835vw 0 2.604166vw 0;
     font-size: 1.625rem;
+    font-weight: bold;
     @include tablet {
       padding: 5.9952vw 0 5.9952vw 0;
       font-size: 1.3rem;

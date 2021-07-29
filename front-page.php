@@ -7,9 +7,9 @@
     </article>
 
     <article class="p-main-visual__catchcopy l-body__content-area">
-      <p>「思いやり」を大切に、高品質なホームページを作ります。</p>
+      <p>クライアントのご要望を的確に再現し、高品質なホームページを作ります</p>
+      <p>Sass、FLOCSSによるCSS設計を取り入れ保守性を高めています。</p>
       <p>PC、タブレット、スマートフォンなどのデバイス、各ブラウザに対応させ、細かく検証を行います。</p>
-      <p>ただ作るのでは無く、保守性の高さを意識して制作できます</p>
     </article>
 
     <article class="p-service l-body__content-area fade">
@@ -20,21 +20,21 @@
           <img class="p-service__logo" src="<?php echo get_template_directory_uri(); ?>/images/index_main-contents_coding.png">
           </div>
           <p>コーディング</p>
-          <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+          <p>PC、タブレット、スマートフォンなどのデバイス、各ブラウザに対応させ、細かく検証を行います。</p>
         </li>
         <li class="p-service__item-block">
           <div class="p-service__item-block__spacer">
           <img class="p-service__logo" src="<?php echo get_template_directory_uri(); ?>/images/index_main-contents_design.png">
           </div>
           <p>Webデザイン</p>
-          <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+          <p>目的に応じて「伝わる」デザインをご提供します。</p>
         </li>
         <li class="p-service__item-block">
           <div class="p-service__item-block__spacer">
           <img class="p-service__logo" src="<?php echo get_template_directory_uri(); ?>/images/index_main-contents_marketing.png">
           </div>
-          <p>コンテンツマーケティング</p>
-          <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
+          <p>コンサルティング</p>
+          <p>SEO、アクセス解析、マーケティング戦略などをご提案します。</p>
         </li>
       </ul>
     </article>

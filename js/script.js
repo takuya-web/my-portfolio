@@ -43,7 +43,7 @@ jQuery(function() {
 			let elemPos = jQuery(this).offset().top;
 			let scroll = jQuery(window).scrollTop();
 			let windowHeight = jQuery(window).height();
-			if (scroll > elemPos - windowHeight + 200){
+			if (scroll > elemPos - windowHeight){
 				jQuery(this).addClass('fadein');
 			} else {
         jQuery(this).removeClass('fadein');
