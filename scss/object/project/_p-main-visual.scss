@@ -1,8 +1,10 @@
 .p-main-visual {
   position: relative;
   margin-top: 150px;  //ヘッダー分の余白
+  margin-bottom: 5.20835vw;
   @include tablet {
     margin-top: 80px; //ヘッダー分の余白
+    margin-bottom: 5.9952vw;
   }
   //img分の余白
   &::after {
@@ -51,26 +53,31 @@
 
 .p-main-visual__catchcopy {
   text-align: center;
-  padding-bottom: 5.20835vw;
+  margin-bottom: 5.20835vw;
   & > p:nth-child(1) {
-    padding: 5.20835vw 0 2.604166vw 0;
+    margin: 0 0 2.604166vw 0;
     font-size: 1.625rem;
+    line-height: 1.75rem;
     font-weight: bold;
     @include tablet {
-      padding: 5.9952vw 0 5.9952vw 0;
-      font-size: 1.3rem;
+      margin: 0 0 3.597122vw 0;
+      font-size: 1.25rem;
+      line-height: 1.375rem;
     }
     @include smart-phone {
-      padding: 12.82051vw 0 12.8205vw 0;
+      margin: 12.82051vw 0 12.8205vw 0;
       font-size: 1.25rem;
+      line-height: 1.25rem;
     }
   }
   & p {
     padding: 0;
-    font-size: 1rem;
-    line-height: 2vw;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
     @include tablet {
-      padding: 3.59712vw 0 0 0;
+      padding: 0;
+      font-size: 0.9375rem;
+      line-height: 1.0625rem;
     }
     @include smart-phone {
       padding: 7.6923vw 0 0 0;

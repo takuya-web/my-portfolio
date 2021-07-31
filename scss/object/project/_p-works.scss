@@ -8,11 +8,19 @@
   & img {
     object-fit: cover;
     padding: 0.520835vw;
-    height: 250px;
+    height: 13.020833vw;
     width: 100%;
     @include tablet {
       padding: 0;
       height: 100%;
+    }
+  }
+  //タイトルがふわっと出現用
+  & li {
+    position: relative;
+    &:hover {
+      transition: all 0.7s;
+      transform: scale(1.05);
     }
   }
 }
@@ -29,3 +37,4 @@
 .slick-next {
   right: -30px;
 }
+//スリック矢印ここまで

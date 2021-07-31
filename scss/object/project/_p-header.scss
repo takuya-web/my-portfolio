@@ -38,8 +38,14 @@
 
   &__logo img {
     width: 225px;
+    transform: scale(0.8);
+    transition: 1s;
     @include tablet {
       width: 120px;
+    }
+    &:hover {
+      transform: scale(1);
+      transition: 1s;
     }
   }
 }

@@ -1,0 +1,85 @@
+.c_pagination {
+  margin-top: 50px;
+}
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination li {
+  height: 42.8px;
+  margin: 0 10px;
+  list-style: none;
+  font-size: 1.5rem;
+  & a {
+    text-decoration: none;
+    &:visited {
+      color: $gray;
+    }
+    &:hover {
+      background-color: rgba(0,0,0,0.5);
+      transition: all 0.5s;
+      color: $white;
+    }
+  }
+  & a, span {
+    display: inline-block;
+    padding: 4px 12.795px;
+  }
+  & .current {
+    color: $white;
+    background-color: $green;
+  }
+  & .page-numbers {
+    border: 1px solid $gray;
+  }
+  & .next, .prev {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42.8px;
+    height: 100%;
+    border: none;
+    &:hover {
+      background-color: $white;
+    }
+  }
+  //next_arrow
+  & .next::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    width: 60%;
+    border-bottom: 2px solid $gray;
+  }
+  & .next::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    width: 60%;
+    border-bottom: 2px solid $gray;
+  }
+  //before_arrow
+  & .prev::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    width: 60%;
+    border-bottom: 2px solid $gray;
+  }
+  & .prev::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    width: 60%;
+    border-bottom: 2px solid $gray;
+  }
+}

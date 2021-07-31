@@ -43,7 +43,7 @@ h3 {
 }
 
 
-//fadeUpTrigger
+//スクロールフェード
 .fade {
   transition: all 1000ms;
   opacity: 0;
@@ -53,3 +53,4 @@ h3 {
   opacity: 1;
   transform: translate(0px, 0px);
 }
+//スクロールフェードここまで

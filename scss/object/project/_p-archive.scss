@@ -11,6 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   & li {
+    position: relative;
     list-style: none;
     padding: 1.302083vw;
     width: calc(100% / 3);
@@ -24,6 +25,10 @@
       width: 100%;
       height: auto;
       object-fit: cover;
+    }
+    &:hover {
+      transition: all 0.7s;
+      transform: scale(1.05);
     }
   }
 }

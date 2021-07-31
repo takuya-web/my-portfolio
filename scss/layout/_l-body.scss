@@ -7,6 +7,9 @@
 
   &__content-area {
     padding: 0 12.5vw;
+    @include tablet {
+      padding: 0 20px;
+    }
     @include smart-phone {
       padding: 0 5.1282vw;
     }

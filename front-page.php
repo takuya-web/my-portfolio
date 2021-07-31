@@ -44,7 +44,7 @@
       <ul class="p-works__grid p-works__slick">
         <?php if(have_posts()): ?>
           <?php while(have_posts()): the_post(); ?>
-            <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?></a></li>
+            <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?><p class="c-works__grid__title"><?php the_title(); ?></P></a></li>
           <?php endwhile; ?>
         <?php else: ?>
           <h2>表示する画像がありません。</h2>
@@ -58,7 +58,7 @@
         <?php
           $args = array(
             'post_type'     => 'news',
-            'post_per_page' => 4
+            'posts_per_page' => 4
           );
           $news_post = new WP_Query( $args );
           if( $news_post -> have_posts()):

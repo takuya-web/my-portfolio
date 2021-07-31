@@ -1,11 +1,11 @@
 //フロントページ
 .p-contact__button {
   margin: 200px 5.20834vw 0 5.20834vw;
-  min-height: 540px;
   @include tablet {
-    margin-top: 120px;
+    margin: 120px 0 0 0;
   }
 }
+//フロントページ　ここまで
 
 //コンタクトページ
 .p-contact__area {
@@ -17,6 +17,8 @@
     margin-top: 120px;
   }
 }
+//コンタクトページ　ここまで
+
 
 //Contact Form 7用
 .p-contact__cf7 {
@@ -38,7 +40,6 @@
     }
   }
 }
-
 .p-contact__cf7-submit > input {
   display: block;
   padding: 1.822915vw 5.989583vw;
@@ -56,7 +57,7 @@
     padding: 8.20512vw;
   }
   &:hover {
-    opacity: 0.7;
+    background-color: $light-green;
     transition: all 0.5s;
   }
   & > a {
@@ -69,3 +70,4 @@
     }
   }
 }
+//Contact Form 7用　ここまで
