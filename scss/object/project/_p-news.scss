@@ -6,14 +6,23 @@
     margin-top: 0;
   }
   & a {
+    display: inline-block;
     color: $gray;
     text-decoration: none;
+    
     //ホバー時
     &:hover {
       font-weight: bold;
       color: $white;
       transition: all 0.7s;
       background-color: rgba(0,0,0,0.5);
+      //流れるテロップ
+      // animation: scrollNews 2s linear infinite;
+      // @keyframes scrollNews {
+      //   0% {transform: translateX(0)}
+      //   100% {transform: translateX(-100%);}
+      // }
+      //流れるテロップここまで
     }
   }
   & > ul {

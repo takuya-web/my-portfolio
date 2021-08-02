@@ -32,6 +32,27 @@
 	add_action('wp_enqueue_scripts','mysite_script');
 
 	//*****************************************************************
+	//  ビジュアルエディタへのCSS反映
+	//*****************************************************************
+	function gutenberg_support_setup() {
+		add_theme_support( 'editor-styles' );
+		add_editor_style( 'editor-style.css' );
+	}
+	add_action( 'after_setup_theme', 'gutenberg_support_setup' );
+
+	//*****************************************************************
+	//  Advanced Custom Fieldsの対策
+	//*****************************************************************
+	// ACFのオプション設定をちゃんと反映させる（ボックス配置データを削除する）
+  function clear_meta_box_order(){
+  // 通常の投稿ページの編集画面
+    delete_user_meta( wp_get_current_user()->ID, 'meta-box-order_post' );
+  // 固定ページの編集画面
+    delete_user_meta( wp_get_current_user()->ID, 'meta-box-order_page' );
+  }
+  add_action( 'admin_init', 'clear_meta_box_order' );
+
+	//*****************************************************************
 	//  投稿(Works)アーカイブページ有効化
 	//*****************************************************************
 	function post_has_archive( $args, $post_type ) {
@@ -111,4 +132,3 @@
 		));
 		echo '</nav>';
 	}
-

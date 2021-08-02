@@ -1217,6 +1217,7 @@ project
 }
 
 .p-news a {
+  display: inline-block;
   color: #4A4A4A;
   text-decoration: none;
 }
