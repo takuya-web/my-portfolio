@@ -9,7 +9,7 @@
     margin-top: 0;
   }
 }
-//600pxズレ解消
+//600pxズレ解消(600以下は削除する)
 @media screen and (max-width: 600px) {
   #wpadminbar {
     display: none;
@@ -75,6 +75,7 @@
     }
   }
   & li > a {
+    position: relative;
     display: inline;
     padding: 0;
     margin: 0 2.604165vw 0 0;
@@ -88,6 +89,23 @@
       background-color: $white;
       padding: 19px 0;
       margin: 0 auto;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: $gray;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s;
+    }
+    &:hover::after {
+      bottom: -4px;
+      opacity: 1;
+      visibility: visible;
     }
   }
   & li:nth-of-type(1) > a {
