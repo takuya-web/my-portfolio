@@ -9,6 +9,7 @@
 </head>
 
 <body <?php body_class('l-body'); ?>>
+<?php wp_body_open(); ?>
 
   <header class="p-header">
     <h1 class="p-header__logo">

@@ -64,7 +64,7 @@
           if( $news_post -> have_posts()):
         ?>
           <?php while( $news_post -> have_posts()): $news_post -> the_post(); ?>
-            <li><p><?php the_time( 'Y/n/j' ); ?></p><p><a href="<?php the_permalink(); ?>"><?php remove_filter('the_content', 'wpautop'); ?><?php the_title(); ?></a></p></li>
+            <li><p><?php the_time( 'Y/n/j' ); ?></p><p><a class="hover-action" href="<?php the_permalink(); ?>"><?php remove_filter('the_content', 'wpautop'); ?><?php the_title(); ?></a></p></li>
         <?php endwhile; ?>
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>
