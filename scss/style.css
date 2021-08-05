@@ -1212,7 +1212,7 @@ project
 @media screen and (max-width: 834px) {
   .p-news {
     padding: 0;
-    margin-top: 0;
+    margin-top: 150px;
   }
 }
 
@@ -1699,13 +1699,6 @@ component
 @media screen and (max-width: 834px) {
   .c-button__contact {
     width: 100%;
-    padding: 3.59712vw;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .c-button__contact {
-    padding: 8.20512vw;
   }
 }
 
@@ -1722,12 +1715,14 @@ component
 
 @media screen and (max-width: 834px) {
   .c-button__contact > a {
+    padding: 3.59712vw;
     font-size: 1.8vw;
   }
 }
 
 @media screen and (max-width: 390px) {
   .c-button__contact > a {
+    padding: 8.20512vw;
     font-size: 3.07692vw;
   }
 }

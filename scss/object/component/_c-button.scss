@@ -4,11 +4,7 @@
   width: 50vw;
   margin: 0 auto;
   @include tablet {
-    width: 100%;
-    padding: 3.59712vw;
-  }
-  @include smart-phone {
-    padding: 8.20512vw;
+    width: 100%;  
   }
   & > a {
     display: block;
@@ -20,9 +16,11 @@
     font-weight: bold;
     text-decoration: none;
     @include tablet {
+      padding: 3.59712vw;
       font-size: 1.8vw;
     }
     @include smart-phone {
+      padding: 8.20512vw;
       font-size: 3.07692vw;
     }
     &:hover {
