@@ -20,6 +20,8 @@
     @include smart-phone {
       height: 47.4359vw;
     }
+  //end_img分の余白
+
   }
   & > img {
     position: absolute;
@@ -36,8 +38,13 @@
   }
   & > p {
     position: absolute;
-    top: 15vw;
+    top: 50%;
+    padding: 3vw 0;
     width: 100%;
+    transform: translateY(-50%);
+    background-color: rgba( 255, 255, 255, 0.5 );
+    color: $gray;
+    font-family: 'Damion', cursive;
     font-size: 2.604164vw;
     text-align: center;
     @include tablet {
@@ -50,6 +57,70 @@
     }
   }
 }
+
+//main-visual 文字アニメーション
+.p-main-visual > p > span {
+  animation: loading 3.0s alternate;
+  &:nth-child(2) {
+    animation-delay: .1s;
+  }
+  &:nth-child(3) {
+    animation-delay: .2s;
+  }
+  &:nth-child(4) {
+    animation-delay: .3s;
+  }
+  &:nth-child(5) {
+    animation-delay: .4s;
+  }
+  &:nth-child(6) {
+    animation-delay: .5s;
+  }
+  &:nth-child(7) {
+    animation-delay: .6s;
+  }
+  &:nth-child(8) {
+    animation-delay: .7s;
+  }
+  &:nth-child(9) {
+    animation-delay: .8s;
+  }
+  &:nth-child(10) {
+    animation-delay: .9s;
+  }
+  &:nth-child(11) {
+    animation-delay: 1.0s;
+  }
+  &:nth-child(12) {
+    animation-delay: 1.1s;
+  }
+  &:nth-child(13) {
+    animation-delay: 1.2s;
+  }
+  &:nth-child(14) {
+    animation-delay: 1.3s;
+  }
+  &:nth-child(15) {
+    animation-delay: 1.4s;
+  }
+  &:nth-child(16) {
+    animation-delay: 1.5s;
+  }
+  &:nth-child(17) {
+    animation-delay: 1.6s;
+  }
+  &:nth-child(18) {
+    animation-delay: 1.7s;
+  }
+  &:nth-child(19) {
+    animation-delay: 1.8s;
+  }
+  @keyframes loading {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+  }
+}
+//end_main-visual 文字アニメーション
 
 .p-main-visual__catchcopy {
   text-align: center;

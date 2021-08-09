@@ -21,6 +21,7 @@
 	function mysite_script() {
 		wp_enqueue_style( 'Nunito', 'https://fonts.googleapis.com/css2?family=Nunito&display=swap', array(), '');
 		wp_enqueue_style( 'Nunito-wght', 'https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap', array(), '');
+		wp_enqueue_style( 'damion', 'href="https://fonts.googleapis.com/css2?family=Courgette&family=Damion&display=swap', array(), '');
 		wp_enqueue_style( 'o-bisu_css', get_template_directory_uri().'/scss/style.css', array(), '1.0.0');
 		wp_enqueue_style( 'o-bisu_style', get_template_directory_uri().'/style.css', array(), '1.0.0');
 		wp_enqueue_script( 'jquery', get_template_directory_uri().'/js/jquery.min.js' , array(), "3.6.0", true );

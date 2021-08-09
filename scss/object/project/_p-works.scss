@@ -15,6 +15,7 @@
       height: 100%;
     }
   }
+
   //タイトルがふわっと出現用
   & li {
     position: relative;
@@ -23,6 +24,7 @@
       transform: scale(1.05);
     }
   }
+  //end_タイトルがふわっと出現用
 }
 
 //スリック矢印
@@ -37,4 +39,4 @@
 .slick-next {
   right: -30px;
 }
-//スリック矢印ここまで
+//end_スリック矢印

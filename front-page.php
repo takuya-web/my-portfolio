@@ -3,7 +3,26 @@
     
     <article class="p-main-visual">
       <img src="<?php echo get_template_directory_uri(); ?>/images/index_main-visual.jpeg">
-      <p><?php bloginfo('description'); ?></p>
+      <p>
+        <span>W</span>
+        <span>e</span>
+        <span>b&nbsp;</span>
+        <span>P</span>
+        <span>r</span>
+        <span>o</span>
+        <span>d</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>o</span>
+        <span>n&nbsp;</span>
+        <span>O</span>
+        <span>-</span>
+        <span>b</span>
+        <span>i</span>
+        <span>s</span>
+        <span>u</span>
+      </p>
     </article>
 
     <article class="p-main-visual__catchcopy l-body__content-area">
