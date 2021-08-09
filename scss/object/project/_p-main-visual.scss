@@ -48,12 +48,12 @@
     font-size: 2.604164vw;
     text-align: center;
     @include tablet {
-      top: 13vw;
+      padding: 1vw 0;
       font-size: 4.79616vw;
     }
     @include smart-phone {
-      top: 30vw;
-      font-size: 7.6923vw;
+      padding: 0;
+      font-size: 5.141388vw;
     }
   }
 }
@@ -136,7 +136,7 @@
       line-height: 1.375rem;
     }
     @include smart-phone {
-      margin: 12.82051vw 0 12.8205vw 0;
+      margin: 0 0 12.8205vw 0;
       font-size: 1.25rem;
       line-height: 1.25rem;
     }

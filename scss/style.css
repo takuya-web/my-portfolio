@@ -991,15 +991,15 @@ project
 
 @media screen and (max-width: 834px) {
   .p-main-visual > p {
-    top: 13vw;
+    padding: 1vw 0;
     font-size: 4.79616vw;
   }
 }
 
 @media screen and (max-width: 390px) {
   .p-main-visual > p {
-    top: 30vw;
-    font-size: 7.6923vw;
+    padding: 0;
+    font-size: 5.141388vw;
   }
 }
 
@@ -1138,7 +1138,7 @@ project
 
 @media screen and (max-width: 390px) {
   .p-main-visual__catchcopy > p:nth-child(1) {
-    margin: 12.82051vw 0 12.8205vw 0;
+    margin: 0 0 12.8205vw 0;
     font-size: 1.25rem;
     line-height: 1.25rem;
   }
