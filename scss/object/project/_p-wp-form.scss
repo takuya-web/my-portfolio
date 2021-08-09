@@ -1,0 +1,49 @@
+.p-wp-form {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  & p {
+    text-align: left;
+  }
+  & p input, textarea {
+    width: 100%;
+    max-width: 1000px;
+  }
+  &__name, &__mail, &__tel, &__adress, &__contact-text {
+    border: 1px solid $green;
+  }
+  & input {
+    width: 100%;
+  }
+}
+
+.p-wp-form__button {
+  display: block;
+  padding: 1.822915vw 5.989583vw;
+  width: 50vw;
+  margin: 30px auto 0 auto;
+  background-color: $green;
+  border-radius: 10px;
+  color: $white;
+  @include tablet {
+    width: 100%;
+    padding: 3.59712vw;
+    font-size: 1.8vw;
+  }
+  @include smart-phone {
+    padding: 8.20512vw;
+  }
+  &:hover {
+    background-color: $light-green;
+    transition: all 0.5s;
+  }
+  & > a {
+    text-decoration: none;
+    @include tablet {
+      font-size: 1.8vw;
+    }
+    @include smart-phone {
+      font-size: 3.07692vw;
+    }
+  }
+}

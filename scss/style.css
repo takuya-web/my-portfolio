@@ -1811,6 +1811,75 @@ project
   }
 }
 
+.p-wp-form {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.p-wp-form p {
+  text-align: left;
+}
+
+.p-wp-form p input, .p-wp-form textarea {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.p-wp-form__name, .p-wp-form__mail, .p-wp-form__tel, .p-wp-form__adress, .p-wp-form__contact-text {
+  border: 1px solid #38572B;
+}
+
+.p-wp-form input {
+  width: 100%;
+}
+
+.p-wp-form__button {
+  display: block;
+  padding: 1.822915vw 5.989583vw;
+  width: 50vw;
+  margin: 30px auto 0 auto;
+  background-color: #38572B;
+  border-radius: 10px;
+  color: #fff;
+}
+
+@media screen and (max-width: 834px) {
+  .p-wp-form__button {
+    width: 100%;
+    padding: 3.59712vw;
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .p-wp-form__button {
+    padding: 8.20512vw;
+  }
+}
+
+.p-wp-form__button:hover {
+  background-color: #6fab56;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.p-wp-form__button > a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 834px) {
+  .p-wp-form__button > a {
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .p-wp-form__button > a {
+    font-size: 3.07692vw;
+  }
+}
+
 /* --------------------------------------------------------
 component
 -------------------------------------------------------- */
