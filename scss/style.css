@@ -1503,7 +1503,7 @@ project
   }
 }
 
-.p-profile img {
+.p-profile__photo {
   height: 100%;
   width: 100%;
   max-height: 26.0417vw;
@@ -1512,14 +1512,14 @@ project
 }
 
 @media screen and (max-width: 834px) {
-  .p-profile img {
+  .p-profile__photo {
     max-height: 59.9524vw;
     max-width: 59.9524vw;
   }
 }
 
 @media screen and (max-width: 390px) {
-  .p-profile img {
+  .p-profile__photo {
     max-height: 100vw;
     max-width: 100vw;
   }
@@ -1552,6 +1552,11 @@ project
   .p-profile p {
     font-size: 0.875rem;
   }
+}
+
+.p-profile__logo {
+  width: 10%;
+  margin: 0 2%;
 }
 
 /*single*/
