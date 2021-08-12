@@ -45,6 +45,9 @@
     @include smart-phone {
       font-size: 0.875rem;
     }
+    & span {
+      font-weight: bold;
+    }
   }
   &__logo {
     width: 10%;

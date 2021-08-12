@@ -66,7 +66,6 @@
             <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail() ?><p class="c-works__grid__title"><?php the_title(); ?></P></a></li>
           <?php endwhile; ?>
         <?php else: ?>
-          <h2>表示する画像がありません。</h2>
         <?php endif; ?>
       </ul>
     </article>

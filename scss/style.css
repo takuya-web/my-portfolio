@@ -1554,6 +1554,10 @@ project
   }
 }
 
+.p-profile p span {
+  font-weight: bold;
+}
+
 .p-profile__logo {
   width: 10%;
   margin: 0 2%;
