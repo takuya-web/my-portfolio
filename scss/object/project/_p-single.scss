@@ -5,16 +5,15 @@
     margin-top: 120px;
   }
   & h3 {
-    font-size: 1.458333vw;
+    font-size: 1.75rem;
     margin: 0 0 1.5625vw 0;
     min-height: 46px;
     @include tablet {
-      font-size: 3.357314vw;
       margin: 1.9157vw 0 2.39808vw 0;
       min-height: 42px;
     }
     @include smart-phone {
-      font-size: 4.102564vw;
+      font-size: 1.5rem;
       margin: 1.28205vw 0 5.1282vw 0;
     }
   }
